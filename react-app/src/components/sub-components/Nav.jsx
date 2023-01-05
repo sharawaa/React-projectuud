@@ -1,14 +1,12 @@
-export default function Header() {
-  return (
-    <div className="bg-light">
-      <nav className="navbar navbar-expand-lg container ">
+import "../../Style/nav.css"
+
+export default function Nav(){
+    return(<>
+        
+        <div>
+      <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#1">
-            <div className="d-flex">
-              <img src="./Leap.png" alt="sssss" />
-              <img src="./Hire Me.png" alt="" />
-            </div>
-          </a>
+          
           <button
             className="navbar-toggler"
             type="button"
@@ -23,50 +21,52 @@ export default function Header() {
           <div
             className="collapse navbar-collapse"
             id="navbarNavDropdown"
-            style={{ flexGrow: 0 }}
+            style={{display:"flex", alignContent:"space-around" }}
           >
-            <ul className="navbar-nav">
+            <ul className="navbar-nav" style={{}}>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#1">
-                  PORTFOLIO
+                  All
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#1">
-                  BLOG
+                  UI Design
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#1">
-                  CV
+                  Product Dessign
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#1">
-                  STORE
+                  Articles
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#1">
-                  FREELANCE
+                  Tutorials
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#1">
-                  ABOUT ME
+                  News
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#1">
-                  CONTACT
-                </a>
-              </li>
-              
-              
-            </ul>
+              </ul>
           </div>
         </div>
       </nav>
     </div>
-  );
+          
+          
+       
+    
+     
+      
+    
+
+   </>
+    );
 }
