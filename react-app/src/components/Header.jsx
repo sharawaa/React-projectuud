@@ -1,10 +1,13 @@
 export default function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg bg-light ">
         <div className="container-fluid">
           <a className="navbar-brand" href="#1">
-            Navbar
+            <div className="d-flex">
+              <img src="./Leap.png" alt="sssss" />
+              <img src="./Hire Me.png" alt="" />
+            </div>
           </a>
           <button
             className="navbar-toggler"
@@ -17,7 +20,11 @@ export default function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <div
+            className="collapse navbar-collapse"
+            id="navbarNavDropdown"
+            style={{ flexGrow: 0 }}
+          >
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#1">
