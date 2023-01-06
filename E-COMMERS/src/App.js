@@ -6,7 +6,15 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+      className="App"
+    >
       <Header />
       <Main />
       <Footer />
