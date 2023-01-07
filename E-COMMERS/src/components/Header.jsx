@@ -1,40 +1,26 @@
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
+import "../Style/header.css"
+
 
 export default function Header() {
   return (
-    <div style={{ backgroundColor: "blue", height: "100px" }}>
-      <div
-        className="container"
-        style={{ display: "flex", alignItems: "center" }}
-      >
-        <img src="logo 1 (1).png" alt="#" />
-        <InputGroup className="mb-3" style={{ width: "500px" }}>
-          <Form.Control
-            placeholder="Recipient's username"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
-          <Button variant="outline-secondary" id="button-addon2">
-            Button
-          </Button>
-        </InputGroup>
+    <div className="header">
+      <div className="container">
+          
+          <img src="logo 1 (1).png" alt="#" />
+
         <section>
-          <img
-            style={{ width: "30px" }}
-            src="https://cdn-icons-png.flaticon.com/512/4466/4466332.png"
-            alt=""
-          />
-          <Button variant="light">Sign in</Button>{" "}
-          <Button variant="light">
-            <img
-              style={{ width: "30px" }}
-              src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
-              alt=""
-            />
-          </Button>{" "}
+          <input type="" />
+          <button id="searchButton">Search</button>
         </section>
+
+        <section style={{display:"flex"}}>
+          <a href="##"><img src="https://cdn2.iconfinder.com/data/icons/user-interface-169/32/about-512.png" alt="#" /></a>
+          <a href="##" id="signIn">sign in</a>
+          <a href="##"><img src="https://cdn0.iconfinder.com/data/icons/finance-e-commerce/53/cart-shoping-trolly-plain-128.png" alt="" /></a>
+
+          <p className="shopingP">+0</p>
+        </section>
+         
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import All from "./All";
+import Card from "./Card";
 import Nav from "./Nav";
 const data = [
   {
@@ -325,7 +325,7 @@ export default function MainBody() {
 
       <section style={{ display: "flex", flexWrap: "wrap", alignContent:"space-between" }}>
         {data.map((uni) => (
-          <All
+          <Card
             title={uni.title}
             image={uni.image}
             description={uni.description}
