@@ -17,7 +17,7 @@ export default function Main() {
       <section style={{width:"100%", display:"flex", justifyContent:"center"}}>
         <Image />
       </section>
-      <section>
+      <section style={{display: "flex"}}>
         <Bottom />
         <Aside />
       </section>

@@ -13,7 +13,7 @@ export default function Product(props) {
         <Card.Text>
          {props.price}
         </Card.Text>
-        <Button variant="warning" style={{borderRadius:"50%"}}><img style={{width:"30px"}} src="https://cdn0.iconfinder.com/data/icons/finance-e-commerce/53/cart-shoping-trolly-plain-128.png" alt="" /></Button>
+        <Button variant="warning" style={{}}><img style={{width:"30px"}} src="https://cdn0.iconfinder.com/data/icons/finance-e-commerce/53/cart-shoping-trolly-plain-128.png" alt="" /></Button>
       </Card.Body>
     </Card>
   </div>;

@@ -122,7 +122,7 @@ const data = [
   
   
 
-export default function products(){
+export default function Products(){
     return(
         <div style={{display:"flex", flexWrap: "wrap", gap: "20px"}}>{data.map((unit)=>(
             <Product
