@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <div>
+    
       <div>
         {isLoggedIn ? (
           <Main setIsloggedIn={setIsloggedIn} />
@@ -35,7 +35,7 @@ function App() {
           />
         )}
       </div>
-    </div>
+   
   );
 }
 const data = [

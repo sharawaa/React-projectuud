@@ -8,13 +8,13 @@ export default function WelcomePage(prop) {
   /*login hiiihdee hiij baigaa utga */
   const [userName1, setUserName] = useState("");
   const [password1, setPassword] = useState("");
-  /* sign up hiihdee hij baigaa utga */
+  /* sign in hiihdee hiij baigaa utga */
   const [userName, setDataName] = useState("");
   const [password, setDataPass] = useState("");
   /* shineer orj irsen utguudaa hadgalaad dataruugaa shidej bainshde bro */
   function saveButton() {
     if (userName === "") {
-      console.error("wrong");
+      console.error("user name passwordoo oruulna uu");
     } else {
       addUser([...data, { userName, password }]);
     }
@@ -22,8 +22,7 @@ export default function WelcomePage(prop) {
 
   return (
     <div className="container">
-      <input
-        type="text"
+      <input type="text"
         placeholder="username"
         onChange={(e) => setUserName(e.target.value)}
       />
