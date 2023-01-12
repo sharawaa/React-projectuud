@@ -2,40 +2,29 @@ import { useState } from "react";
 import PageBrowser from "./components/PageBrowser";
 import WelcomePage from "./components/WelcomePage";
 
-
-
-
 function App() {
-
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  
-
-
-
-  function loginHandler(userName, password){
+  function loginHandler(userName, password) {
     console.log("login handler is running");
     console.log("username:", userName);
-    console.log("password:",password);
-  data.map((user)=> {
-    if(userName === user.userName && password === user.password){
-      setIsLoggedIn(true);
-    }else{
-      console.error("wrong password or user name")
-    }
-  });
-    
+    console.log("password:", password);
+    data.map((user) => {
+      if (userName === user.userName && password === user.password) {
+        setIsLoggedIn(true);
+      } else {
+        console.error("wrong password or user name");
+      }
+    });
   }
-
-
-
 
   return (
     <div>
-      {isLoggedIn ? (<PageBrowser setIsLoggedIn={setIsLoggedIn }/>)
-      : (<WelcomePage  setLogin={loginHandler}/>)}
-      
-      
+      {isLoggedIn ? (
+        <PageBrowser setIsLoggedIn={setIsLoggedIn} />
+      ) : (
+        <WelcomePage setLogin={loginHandler} />
+      )}
     </div>
   );
 }
@@ -44,6 +33,10 @@ const data = [
   {
     userName: "bataa",
     password: "zxc",
+  },
+  {
+    userName: "sharva",
+    password: "asd",
   },
   {
     userName: "suhee",
@@ -56,6 +49,3 @@ const data = [
 ];
 
 export default App;
-
-
-
